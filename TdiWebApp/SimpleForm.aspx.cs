@@ -28,12 +28,14 @@ namespace TdiWebApp
             string firstName = txtFirstName.Text;
             string lastName = txtLastName.Text;
             string country = ddlCountry.SelectedValue;
-            string birthdate = txtBirthdate.Text;
+            //string birthdate = txtBirthdate.Text;
             bool isNewsletterSubscribed = chkNewsletter.Checked;
 
             lblHello.Text = $"Bienvenue, {firstName} {lastName} !";
 
-            if (isNewsletterSubscribed)
+            lblConfirmation.Text = isNewsletterSubscribed ? "Vous vous êtes inscrit à la newsletter." : "Vous n'êtes pas inscrit à la newsletter.";
+
+/*            if (isNewsletterSubscribed)
             {
                 lblConfirmation.Text = "Vous vous êtes inscrit à la newsletter.";
             }
@@ -41,6 +43,7 @@ namespace TdiWebApp
             {
                 lblConfirmation.Text = "Vous n'êtes pas inscrit à la newsletter.";
             }
+*/
         }
         protected void ddlOptions_SelectedIndexChanged(object sender, EventArgs e)
         {
