@@ -48,9 +48,8 @@
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/SimpleForm">SimpleForm</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/DataValidation">DataValid</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/DataValidationBT">DataValid2</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/DataValidationBT">Data_Validation</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/GvADO">GV_ADO</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">À propos de</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
                     </ul>
