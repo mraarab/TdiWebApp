@@ -11,8 +11,10 @@ namespace TdiWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack && Session["UserName"] == null)
+                Response.Redirect("~/Login.aspx");
         }
+
         // for exemple-1
         protected void btnSubmit_Click(object sender, EventArgs e)
         {

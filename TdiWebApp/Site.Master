@@ -54,6 +54,17 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">À propos de</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
                     </ul>
+
+                    <div class="d-flex">
+                        <% if (Session["UserName"] != null) { %>
+                            <span class="navbar-text me-3">
+                                Bienvenue, <%: Session["UserName"] %>
+                            </span>
+                            <asp:Button ID="btnLogout" runat="server" Text="Déconnexion" 
+                                      OnClick="btnLogout_Click" CssClass="btn btn-outline-light" />
+                        <% } %>
+                    </div>
+
                 </div>
             </div>
         </nav>
@@ -62,7 +73,13 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - TDI Web Application (ASP.NET)</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p>&copy; <%: DateTime.Now.Year %> - TDI Web Application (ASP.NET)</p>
+                    <p>
+                        <asp:Label ID="lblConnectedUsers" runat="server" CssClass="stats" />
+                        <asp:Label ID="lblLanguage" runat="server" CssClass="language-info" />
+                    </p>
+                </div>
             </footer>
         </div>
     </form>
