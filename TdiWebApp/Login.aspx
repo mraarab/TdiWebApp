@@ -25,6 +25,8 @@
                         <asp:DropDownList ID="ddlLanguage" runat="server" CssClass="form-select">
                             <asp:ListItem Text="Français" Value="fr" />
                             <asp:ListItem Text="English" Value="en" />
+                            <asp:ListItem Text="Arab" Value="ar" />
+
                         </asp:DropDownList>
                     </div>
 

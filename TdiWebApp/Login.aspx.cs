@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,12 +13,7 @@ namespace TdiWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Vérifier si l'utilisateur a déjà une préférence de langue
-            HttpCookie languageCookie = Request.Cookies["PreferredLanguage"];
-            if (languageCookie != null)
-            {
-                ddlLanguage.SelectedValue = languageCookie["Language"];
-            }
+
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
