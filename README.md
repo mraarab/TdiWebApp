@@ -9,7 +9,7 @@ Le projet est organisé en plusieurs branches. Chaque branche correspond à une 
 - **main** : La branche principale contenant le code de base du projet.
 - **Composants-Interface_Gestion-des-Evenements** : Comprendre et manipuler les composants d’interface dans Web Forms, Gérer les événements associés aux contrôles Web.
 - **With-Session-Application-Cookies** : Implémenter la gestion des états (session, application), Cookies.
-- **Data_Access_ADO-EF** : Interagir avec une base de données pour afficher et manipuler les données en utilisant ADO.NET
+- **Data_Access_ADO** : Interagir avec une base de données pour afficher et manipuler les données en utilisant ADO.NET
   
 ## Comment Naviguer dans le Projet
 
