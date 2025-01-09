@@ -9,13 +9,20 @@ https://github.com/mraarab/TdiWebApp?tab=readme-ov-file#projet-de-d%C3%A9veloppe
 ## Configuration spécifique à cette branche
 
 Assurez-vous que la chaîne de connexion est correctement configurée dans le fichier `Web.config` :
+![image](https://github.com/user-attachments/assets/13376a56-c8de-4c81-af87-12ff0e98152f)
 
-![Configuration Web.config](https://github.com/user-attachments/assets/3cc83167-ea29-40bd-9a91-211b41e2f25a)
+assurer que vous avez crée la base de donnés `BikeStores` :
+![SQL-Server-Sample-Database](https://github.com/user-attachments/assets/3f415b26-774e-4a80-af7f-940440fd093f)
 
-Vérifiez également que vous disposez d'une base de données sur votre SQL Server ou SQL Server Express nommée `library`. Sinon, modifiez le nom de la base de données dans le fichier `Web.config`. 
-Assurez-vous que cette base de données contient une table `Books` :
+## Exécution des scripts SQL Pour créer les tables et insérer des données, exécutez les scripts SQL suivants :
+  1. Exécutez la requête `BikeStores Sample Database - create objects.sql`.
+  2. Ensuite, exécutez `BikeStores Sample Database - load data.sql` pour insérer les données.
 
-![Table Books](https://github.com/user-attachments/assets/c7956110-63bb-4f46-884c-9c1c56969117)
+## Assurer la bon configuration de l'EntityFramework
+  voir le support de cours...
+
+
+
 
 
 
