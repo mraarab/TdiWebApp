@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GvADO.aspx.cs" Inherits="TdiWebApp.GvADO" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GvEF.aspx.cs" Inherits="TdiWebApp.GvEF" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="container mt-5">
@@ -24,7 +24,7 @@
                 <asp:TextBox ID="ModelYear" runat="server" CssClass="form-control" />
             </div>
             <div class="mb-3">
-                <label for="ListPrice" class="form-label">Prix:</label>
+                <label for="ListPrice" class="form-label">Prix de Liste:</label>
                 <asp:TextBox ID="ListPrice" runat="server" CssClass="form-control" />
             </div>
             <asp:Button ID="btnAdd" runat="server" Text="Ajouter" CssClass="btn btn-primary" OnClick="btnAdd_Click" />
@@ -33,6 +33,7 @@
 
     <div class="container mt-5">
         <h2>Liste des Produits</h2>
+
         <asp:GridView ID="gvBikes" runat="server" AutoGenerateColumns="False"  DataKeyNames="product_id"
                 OnRowDeleting="Bikes_RowDeleting" 
                 OnRowEditing="Bikes_RowEditing" 
@@ -59,7 +60,6 @@
 
                 </Columns>
        </asp:GridView>
-
     </div>
 
     <script type="text/javascript">

@@ -11,7 +11,7 @@ namespace TdiWebApp
 {
 
 
-    public partial class GvADO
+    public partial class GvEF
     {
 
         /// <summary>
