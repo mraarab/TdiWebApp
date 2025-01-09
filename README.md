@@ -14,7 +14,7 @@ Assurez-vous que la chaîne de connexion est correctement configurée dans le fi
 assurer que vous avez crée la base de donnés `BikeStores` :
 ![SQL-Server-Sample-Database](https://github.com/user-attachments/assets/3f415b26-774e-4a80-af7f-940440fd093f)
 
-## Exécution des scripts SQL Pour créer les tables et insérer des données, exécutez les scripts SQL suivants :
+## Exécution des scripts SQL Pour créer les tables et insérer des données, exécutez les scripts SQL existants sur SQL-Server-BikeStores-DB.rar :
   1. Exécutez la requête `BikeStores Sample Database - create objects.sql`.
   2. Ensuite, exécutez `BikeStores Sample Database - load data.sql` pour insérer les données.
 
